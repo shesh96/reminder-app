@@ -1,0 +1,74 @@
+
+.card {
+  width: 320px;
+  margin: 40px auto;   /* this centers horizontally */
+}
+
+
+/* TOP TIME */
+.time-header {
+  background: #ff7b7b;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.red-clock {
+  background: #ff5c5c;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  padding: 6px;
+  cursor: pointer;
+}
+
+/* LIST */
+.list {
+  background: #eee;
+  margin: 10px 0;
+  padding: 8px;
+  height: 180px;
+  overflow-y: auto;
+  border-radius: 6px;
+}
+
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 4px;
+  font-size: 14px;
+}
+
+.done {
+  text-decoration: line-through;
+  color: gray;
+}
+
+/* INPUT */
+.input-row {
+  display: flex;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.input-row input {
+  flex: 1;
+  padding: 6px;
+}
+
+/* BUTTON */
+.add-btn {
+  margin-top: 10px;
+  width: 100%;
+  background: #2f6bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}

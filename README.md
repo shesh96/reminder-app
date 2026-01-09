@@ -1,59 +1,76 @@
-# ReminderApp
+# ⏰ Angular Reminder App (RxJS)
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.0.5.
+A simple and elegant **Reminder Application** built using **Angular (Standalone Components)** and **RxJS**, developed as part of a Front End Developer assignment.
 
-## Development server
+The app displays a live running clock, allows users to create reminders with a specific time, and automatically marks reminders as completed when their time is crossed.
 
-To start a local development server, run:
+---
+
+## 🚀 Live Demo
+
+👉 https://YOUR_VERCEL_URL.vercel.app
+
+---
+
+## 📂 GitHub Repository
+
+👉 https://github.com/YOUR_USERNAME/reminder-app
+
+---
+
+## ✨ Features
+
+- ⏰ **Live Running Time** displayed at the top
+- ⏩ **Fast Time Mode**  
+  - Clicking the red clock speeds up time  
+  - 1 minute runs in 1 second
+- ➕ **Add Reminders** using the blue button
+- 🕒 **Set Reminder Time** using datetime picker
+- ❌ **Auto Strike-through** when reminder time is crossed
+- 🎨 Clean and minimal UI inspired by provided reference
+- ⚡ Built using **Angular Standalone Components**
+- 🔁 Reactive time handling using **RxJS**
+
+---
+
+## 🛠️ Tech Stack
+
+- **Angular** (Standalone Components)
+- **RxJS**
+- **TypeScript**
+- **HTML5 / CSS3**
+- **Vercel** (Deployment)
+
+---
+
+## 📸 Reference Design
+
+The UI design is inspired by the provided illustrative image in the assignment.  
+As mentioned in the task instructions, the design is original while maintaining the same functionality.
+
+---
+
+## 🧠 Implementation Details
+
+- **RxJS `interval()`** is used to manage the live running clock
+- Fast-time mode increments time by **1 minute per second**
+- Reminder completion is determined by comparing reminder time with current time
+- Standalone components are used for a modern and clean Angular architecture
+- Routing fallback is handled via `vercel.json` for smooth refresh behavior
+
+---
+
+## 🧪 How to Run Locally
 
 ```bash
+# Clone the repository
+git clone https://github.com/YOUR_USERNAME/reminder-app.git
+
+# Navigate to project folder
+cd reminder-app
+
+# Install dependencies
+npm install
+
+# Run the app
 ng serve
-```
-
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.

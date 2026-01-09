@@ -1,0 +1,40 @@
+<div class="card">
+
+  <!-- TOP LIVE TIME -->
+  <div class="time-header">
+    <span>{{ currentTime | date:'shortTime' }}</span>
+    <button class="red-clock" (click)="toggleFastTime()">⏰</button>
+  </div>
+
+  <!-- REMINDER LIST -->
+  <div class="list">
+    <div
+      class="list-item"
+      *ngFor="let r of reminders"
+      [class.done]="r.completed"
+    >
+      <span class="text">{{ r.text }}</span>
+      <span class="time">{{ r.time | date:'shortTime' }}</span>
+    </div>
+  </div>
+
+  <!-- INPUT -->
+  <div class="input-row">
+    <input
+      type="text"
+      placeholder="Reminder text"
+      [(ngModel)]="reminderText"
+    />
+    <input
+      type="datetime-local"
+      [(ngModel)]="reminderTime"
+      class="green-clock"
+    />
+  </div>
+
+  <!-- ADD BUTTON -->
+  <button class="add-btn" (click)="addReminder()">
+    Add Reminder
+  </button>
+
+</div>
