@@ -8,13 +8,13 @@ The app displays a live running clock, allows users to create reminders with a s
 
 ## 🚀 Live Demo
 
-👉 https://YOUR_VERCEL_URL.vercel.app
+👉 https://reminder-app-tau.vercel.app/
 
 ---
 
 ## 📂 GitHub Repository
 
-👉 https://github.com/YOUR_USERNAME/reminder-app
+👉 https://github.com/shesh96/reminder-app
 
 ---
 
