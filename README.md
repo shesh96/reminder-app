@@ -64,7 +64,7 @@ As mentioned in the task instructions, the design is original while maintaining 
 
 ```bash
 # Clone the repository
-git clone https://github.com/YOUR_USERNAME/reminder-app.git
+git clone https://github.com/shesh96/reminder-app.git
 
 # Navigate to project folder
 cd reminder-app
